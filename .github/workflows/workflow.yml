@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: action/checkout@v3
+      uses: actions/checkout@v3
 
     - name: Install Dependancies 
       run: |
@@ -29,6 +29,6 @@ jobs:
 
     - name: Run unit tests with nose
       run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
-      
+
 
   
